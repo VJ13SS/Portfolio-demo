@@ -567,38 +567,7 @@ section {
   nav .nav-right {
     display: none;
   }
-/*
-  nav .nav-right.active {
-    z-index: 15;
-    position: fixed;
-    background-color: white;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
-    transition: 0.3s ease;
-  }
 
-  nav .nav-right a {
-    color: black;
-    font-size: 1.2em;
-    margin: 10px;
-    padding: 10px 40px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-  }
-
-  nav .nav-right a:hover {
-    background-color: #3a6cf4;
-    color: white;
-    transition: 0.3s ease;
-  }
-*/
   .menu-btn {
     position: absolute;
     background-image: url(Image/menu.png);
