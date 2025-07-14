@@ -17,13 +17,13 @@ a {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: auto;
   overflow-x: hidden;
 }
 
 nav {
-  z-index: 20;
+  z-index: 100;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.1);
   top: 0;
@@ -72,7 +72,7 @@ nav.sticky .nav-right a:hover {
 
 section {
   padding: 100px 100px;
-  width: 100%;
+  width: 100vw;
 }
 
 .main {
@@ -537,7 +537,7 @@ section {
   }
 
   .nav-right.active {
-    z-index: 20;
+    z-index: 15;
     position: fixed;
     background-color: white;
     top: 0;
