@@ -49,10 +49,6 @@ nav .brand {
   text-decoration: none;
 }
 
-nav .nav-right {
-  position: relative;
-}
-
 nav .nav-right a {
   color: white;
   font-size: 1em;
@@ -68,6 +64,42 @@ nav .nav-right a:hover {
 
 nav.sticky .nav-right a:hover {
   color: black;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.sidebar a {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #3a6cf4;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.sidebar.active {
+    z-index: 10;
+  transform: translateX(0%);
 }
 
 section {
@@ -464,7 +496,7 @@ section {
 
 .contact .content .row .card {
   background: #fff;
-  width: 240px;
+  width: 250px;
   margin: 20px;
   padding: 25px;
   display: flex;
@@ -535,8 +567,8 @@ section {
   nav .nav-right {
     display: none;
   }
-
-  .nav-right.active {
+/*
+  nav .nav-right.active {
     z-index: 15;
     position: fixed;
     background-color: white;
@@ -566,7 +598,7 @@ section {
     color: white;
     transition: 0.3s ease;
   }
-
+*/
   .menu-btn {
     position: absolute;
     background-image: url(Image/menu.png);
@@ -651,7 +683,6 @@ section {
   .about .content .column-right {
     width: 95%;
   }
-
 
   .work .content .card {
     width: 90%;
