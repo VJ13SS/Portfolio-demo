@@ -537,7 +537,6 @@ section {
   }
 
   .nav-right.active {
-    z-index: 15;
     position: fixed;
     background-color: white;
     top: 0;
