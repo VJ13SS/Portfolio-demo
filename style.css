@@ -78,7 +78,8 @@ nav.sticky .nav-right a:hover {
   justify-content: center;
   width: 50vw;
   min-height: 100vh;
-  background-color: #fff;
+  overflow-y: scroll;
+  background-color: red;
 }
 
 .sidebar a {
