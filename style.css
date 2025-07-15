@@ -19,7 +19,7 @@ a {
 body {
   width: 100vw;
   height: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 nav {
@@ -28,7 +28,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.1);
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   padding: 15px 200px;
   display: flex;
   justify-content: space-between;
@@ -77,9 +77,9 @@ nav.sticky .nav-right a:hover {
   align-items: center;
   justify-content: center;
   width: 50vw;
-  min-height: 100vh;
+  height: 100vh;
   overflow-y: scroll;
-  background-color: red;
+  background-color: white;
 }
 
 .sidebar a {
@@ -565,6 +565,10 @@ section {
     padding: 10px 20px;
   }
 
+  section{
+    padding: 20px;
+  }
+
   nav .nav-right {
     display: none;
   }
@@ -593,11 +597,7 @@ section {
     background-color: #3a6cf4;
     border-radius: 5px;
   }
-
-  section {
-    padding: 80px 20px;
-  }
-
+  
   .main .content h2 {
     font-size: 1em;
   }
@@ -616,7 +616,6 @@ section {
 
   .about .content .column {
     width: 100%;
-    position: relative;
   }
 
   .about .content .column-right {
@@ -634,7 +633,6 @@ section {
   }
 
   .skills .content .column {
-    position: relative;
     width: 100%;
   }
 
@@ -659,5 +657,11 @@ section {
   }
   .card-img .overlay-text {
     opacity: 1;
+  }
+}
+
+@media (max-width: 400px){
+ .contact .content .row .card{
+    width: 90%;
   }
 }
