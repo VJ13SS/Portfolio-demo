@@ -34,7 +34,7 @@ nav {
   width: 100vw;
   padding: 15px 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   transition: 0.2s ease;
 }
@@ -50,6 +50,12 @@ nav .brand {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+nav .nav-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav .nav-right a {
@@ -301,60 +307,22 @@ section {
 
 .skills .content .column-right {
   width: 46%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.skills .content .column-right .bar {
+.skills .content .column-right .skill {
   margin-bottom: 15px;
   padding: 10px;
-}
-
-.skills .content .column-right .bar .info {
+  min-width: 100px;
+  width: fit-content;
+  min-height: 100px;
+  background-color: #3a6cf4;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 5px;
-}
-
-.skills .content .column-right .br .info span {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.skills .content .column-right .bar .line {
-  width: 100%;
-  height: 17px;
-  background-color: #ccc;
-  border-radius: 2px;
-}
-
-.skills .content .column-right .bar .line .line-content {
-  height: 100%;
-  border-radius: 3px;
-}
-
-.skills .content .column-right .bar .html .line-content {
-  width: 95%;
-  background-color: #e45126;
-}
-
-.skills .content .column-right .bar .css .line-content {
-  width: 90%;
-  background-color: #0c73b8;
-}
-
-.skills .content .column-right .bar .javascript .line-content {
-  width: 80%;
-  background-color: #e3a324;
-}
-
-.skills .content .column-right .bar .python .line-content {
-  width: 85%;
-  background-color: blue;
-}
-
-.skills .content .column-right .bar .php .line-content {
-  width: 65%;
-  background-color: #6d7eb8;
+  justify-content: center;
 }
 
 /* Services */
@@ -578,7 +546,6 @@ section {
   }
 
   .menu-btn {
-    position: absolute;
     background-image: url(Image/menu.png);
     background-position: center;
     background-size: 30px;
